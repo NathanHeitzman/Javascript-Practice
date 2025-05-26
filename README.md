@@ -1,2 +1,2 @@
 # Javascript-Practice
-Collection of practice files with Javascript
+Collection of my practice files with Javascript
