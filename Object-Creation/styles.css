@@ -38,8 +38,14 @@ img{ /*all images on the page should follow same sizing principles*/
     border-color: blue;
     border-style:dashed;
 }
+.row-content p{
+    background-color: lightblue;
+    font-size: 140%;
+    
+}
 .row-content button{
     width: 20%;
     background-color: blueviolet;
+
     border-radius: 10%;
 }
