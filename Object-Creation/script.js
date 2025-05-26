@@ -51,3 +51,24 @@ const wallet = { //a simplified wallet object that holds a library card and vari
         }
     }
 };
+
+function UpdateButtonNames(){
+    const buttons = document.querySelectorAll("button");
+    const updates = ["+","-","+","-"];
+    const returns = ["Add a dollar","Take a dollar","Activate Card","Deactivate Card"]
+    if (window.innerWidth < 770){
+        for(let index = 0; index < updates.length; index++){
+            const cur_button = buttons[index];
+            cur_button.textContent = updates[index];
+            console.log("updating button: ",index);
+        }
+    } else{
+        for(let index = 0; index < returns.length; index++){
+            const cur_button = buttons[index];
+            cur_button.textContent = returns[index];
+            console.log("reverting button: ",index);
+        }
+    }
+}
+
+window.addEventListener("resize",UpdateButtonNames);

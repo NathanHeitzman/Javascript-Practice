@@ -32,10 +32,20 @@ img{ /*all images on the page should follow same sizing principles*/
     justify-content: center;
     align-items: center;
     width: 50%;
+    gap: 2em;
     border-color: blue;
     border-style:dashed;
     
 }
 .row-content button{
-    width: 10%;
+    width: 20%;
+    background-color: blueviolet;
+    
+    border-radius: 10%;
+}
+
+@media(max-width: 770px){
+    #add-dol{
+        
+    }
 }
