@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+
+    border-style: dashed;
+}
+img{ /*all images on the page should follow same sizing principles*/
+    width: 100%;
+    object-fit: contain;
+    border-radius: 15%;
+}
+.text-container{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding:10px;
+    background-color: aquamarine;
+
+    border-style:dashed;
+}
+.row-container{
+    display: flex;
+    flex-direction: row;
+    border-color: red;
+    border-style: dashed;
+}
+.row-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-color: blue;
+    border-style:dashed;
+    
+}
+.row-content button{
+    width: 10%;
+}
