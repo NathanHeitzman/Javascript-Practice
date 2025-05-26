@@ -24,6 +24,7 @@ img{ /*all images on the page should follow same sizing principles*/
 .row-container{
     display: flex;
     flex-direction: row;
+    
     border-color: red;
     border-style: dashed;
 }
@@ -33,19 +34,12 @@ img{ /*all images on the page should follow same sizing principles*/
     align-items: center;
     width: 50%;
     gap: 2em;
+    
     border-color: blue;
     border-style:dashed;
-    
 }
 .row-content button{
     width: 20%;
     background-color: blueviolet;
-    
     border-radius: 10%;
-}
-
-@media(max-width: 770px){
-    #add-dol{
-        
-    }
 }
