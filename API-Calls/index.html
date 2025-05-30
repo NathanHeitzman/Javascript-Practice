@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon API Practive</title>
+    <style>
+        .pokemon-container{
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 50px;
+            min-width: 300px;
+        }
+        .normal-container, .shiny-container{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            
+            background-color: gray;
+            border: 5px solid black;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="page-header">Compare Normal vs Shiny Pokemon</h1>
+    </div>
+    <div class="pokemon-container">
+        <div class="normal-container">
+            <img src="" alt="this is the normal pokemon" id="normal">
+        </div>
+    
+        <br>
+    
+        <div class="shiny-container">
+            <img src="" alt="this is the shiny pokemon" id="shiny">
+        </div>
+    </div>
+</body>
+<script src="ApiCalls.js"></script>
+</html>
