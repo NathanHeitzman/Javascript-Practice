@@ -1,7 +1,7 @@
 fetchButton = document.getElementById("fetch-button");
+input = document.getElementById("user-input");
 
 fetchButton.addEventListener("click", () => {
-    input = document.getElementById("user-input");
     inputValue = input.value.toLowerCase();
 
     fetch(`https://pokeapi.co/api/v2/pokemon/${inputValue}`) //fetch a pokemon based on provided name
@@ -25,6 +25,12 @@ fetchButton.addEventListener("click", () => {
         NormalDisplay.src = "red-x.png";
         ShinyDisplay.src = "red-x.png";
     })
+})
+//when enter key is pressed while user is in input field submit button will be clicked
+input.addEventListener("keypress", (e) =>{
+    if(e.key === "Enter"){
+        fetchButton.click();
+    }
 })
 
 
