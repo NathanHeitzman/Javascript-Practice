@@ -1,5 +1,6 @@
 fetchButton = document.getElementById("fetch-button");
 input = document.getElementById("user-input");
+errorMessage = document.getElementById("error-msg");
 
 fetchButton.addEventListener("click", () => {
     inputValue = input.value.toLowerCase();
@@ -7,6 +8,9 @@ fetchButton.addEventListener("click", () => {
     fetch(`https://pokeapi.co/api/v2/pokemon/${inputValue}`) //fetch a pokemon based on provided name
     .then(response => { //log a response then turn it into json
         console.log(response); 
+        if(errorMessage.textContent === "Error: Pick a real pokemon"){
+            errorMessage.textContent = "";
+        }
         return response.json();
     }) 
     .then(data => {
@@ -24,6 +28,7 @@ fetchButton.addEventListener("click", () => {
         const ShinyDisplay = document.getElementById("shiny");
         NormalDisplay.src = "red-x.png";
         ShinyDisplay.src = "red-x.png";
+        errorMessage.textContent = "Error: Pick a real pokemon"
     })
 })
 //when enter key is pressed while user is in input field submit button will be clicked
